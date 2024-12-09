@@ -59,21 +59,55 @@ const header2 = () => {
                     </div>
                 </div>
                 </div>
-                <div className="w-full bg-[#FFFFFF] flex items-center justify-center py-[12px] max-md:bg-white max-md:py-[24px]">
-                <nav className="w-full max-w-[1050px] flex justify-between gap-28 max-md:w-full max-md:max-w-3xl max-md:px-6">
-                    <div className="text-[24px] cursor-pointer">
-                        <h3 className="font-bold max-md:font-bold max-md:text-[24px]">Bandage</h3>
+                <div className="w-full bg-[#FFFFFF] flex items-center justify-center py-[12px] max-md:bg-white">
+                <nav className="w-full max-w-[1050px] flex justify-between gap-28 max-md:w-full max-md:h-[40px] max-md:max-w-3xl max-md:px-6">
+                    <div className="text-[24px] cursor-pointer max-md:absolute">
+                        <Link href="/"><h3 className="font-bold max-md:font-bold max-md:text-[24px]">Bandage</h3></Link>
                     </div>
-                    <div className="w-full bg-white flex justify-between gap-[32px] max-md:hidden">
-                        <div className="flex items-center gap-2s">
-                            <Link href="/" className="p-[10px] cursor-pointer">Home</Link>
-                            <Link href="/shop/" className="p-[10px] cursor-pointer">Shop</Link>
-                            <Link href="/about/" className="p-[10px] cursor-pointer">About</Link>
-                            <Link href="#" className="p-[10px] cursor-pointer">Blog</Link>
-                            <Link href="/contact/" className="p-[10px] cursor-pointer">Contact</Link>
-                            <Link href="/team/" className="p-[10px] cursor-pointer">Pages</Link>
+                    <div className="w-full bg-white flex justify-between gap-[32px]">
+                        <div className="flex items-center gap-2 max-md:gap-[30px] max-md:flex-col max-md:bg-white max-md:absolute max-md:top-14 max-md:left-[-24px] max-md:w-full max-md:py-20 max-md:text-center">
+                            <Link href="/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Home</Link>
+                            <div className="flex">
+                                <Link href="/shop/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Shop</Link>
+                                <Image className="cursor-pointer" src={"/icons/arrow-down.svg"} 
+                                    alt={"icon"} 
+                                    width={"10"} 
+                                    height={"10"}/>
+                            </div>
+                            <Link href="/about/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">About</Link>
+                            <Link href="#" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Blog</Link>
+                            <Link href="/contact/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Contact</Link>
+                            <Link href="/team/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Pages</Link>
+                            <div className="flex flex-col items-center gap-[20px] md:hidden">
+                            <div className="text-[#23A6F0] font-bold flex items-center gap-[5px]">
+                                <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/man.svg"} 
+                                    alt={"icon"} 
+                                    width={"12"} 
+                                    height={"12"}/>
+                                <Link href={"#"}>Login / Register</Link>
+                           </div>
+                           <Image className="cursor-pointer" src={"/icons/search.svg"} 
+                                alt={"icon"} 
+                                width={"16"} 
+                                height={"16"}/>
+
+                            <div className="flex gap-2 text-[#23A6F0]">
+                                 <Image className="cursor-pointer" src={"/icons/cart.svg"} 
+                                alt={"icon"} 
+                                width={"16"} 
+                                height={"16"}/>
+                                1
+                            </div>
+                            <div className="flex gap-2 text-[#23A6F0]">
+                                <Image className="cursor-pointer" src={"/icons/heart.svg"} 
+                                alt={"icon"} 
+                                width={"16"} 
+                                height={"16"}/>
+                                1
+                            </div>
                         </div>
-                        <div className="flex items-center gap-[20px]">
+                        </div>
+                        <div className="flex items-center gap-[20px] max-md:hidden">
                            <div className="text-[#23A6F0] font-bold flex items-center gap-[5px]">
                                 <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/man.svg"} 
                                     alt={"icon"} 
@@ -81,21 +115,34 @@ const header2 = () => {
                                     height={"12"}/>
                                 <Link href={"#"}>Login / Register</Link>
                            </div>
-                           <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/search.svg"} 
+                           <Image className="cursor-pointer" src={"/icons/search.svg"} 
                                 alt={"icon"} 
                                 width={"16"} 
                                 height={"16"}/>
 
-                            <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/cart.svg"} 
+                            <div className="flex gap-2 text-[#23A6F0]">
+                                 <Image className="cursor-pointer" src={"/icons/cart.svg"} 
                                 alt={"icon"} 
                                 width={"16"} 
                                 height={"16"}/>
-                            
-                            <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/heart.svg"} 
+                                1
+                            </div>
+                            <div className="flex gap-2 text-[#23A6F0]">
+                                <Image className="cursor-pointer" src={"/icons/heart.svg"} 
                                 alt={"icon"} 
                                 width={"16"} 
                                 height={"16"}/>
+                                1
+                            </div>
                         </div>
+                    </div>
+                    <div className="md:hidden w-full flex items-center justify-end gap-4">
+                        <Link href={"#"}>
+                            <Image src={"/icons/R3.svg"} 
+                                alt={"icon"} 
+                                width={"24"} 
+                                height={"24"}/>
+                        </Link>
                     </div>
                 </nav>
             </div>

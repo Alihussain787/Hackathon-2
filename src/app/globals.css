@@ -45,8 +45,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .fp{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px
+}
+
+.fp3{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -57,12 +63,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.fp2{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  gap: 10px
 }
 #shop-img1{
   background-image: url('/image/shop-img-1.svg');
@@ -124,9 +124,31 @@ body {
   grid-template-rows: repeat(2, 1fr);
   gap: 10px
 }
-.container2{
-  background-image: url('/image/background-img-hero.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+
+@media(max-width: 768px){
+  .fp{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px
+  }
+  .fp3{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px
+  }
+  .pricing-box{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 50px
+  }
+  .team-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 20px
+  }
 }

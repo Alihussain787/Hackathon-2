@@ -7,9 +7,9 @@ const ProductListPage = () => {
     return(
         <div>
         <Header />
-        <section className="w-full bg-[#FAFAFA] flex flex-col items-center justify-center">
+        <section className="w-full bg-[#FAFAFA] flex flex-col items-center justify-center max-md:mt-[870px]">
             <div className="w-full max-w-[1050px] bg-[#FAFAFA] flex items-center justify-center py-10 max-md:w-full max-md:max-w-3xl max-md:block">
-                <div className="w-full flex justify-between items-center">
+                <div className="w-full flex items-center max-md:justify-center">
                         <h1 className="text-24px text-[#252B42] font-bold">Shop</h1>
                 </div>
                 <div className="flex items-center justify-center gap-2s">
@@ -24,7 +24,7 @@ const ProductListPage = () => {
                 </div>
             </div>
             <div className="w-full flex items-center justify-center">
-                <div className="w-full max-w-[1088px] pb-[48px] flex gap-4 cursor-pointer">
+                <div className=" flex items-center justify-center w-full max-w-[1088px] pb-[48px] gap-4 cursor-pointer max-md:flex-col">
                     <Link href="/shopnow/">
                         <div id="shop-img1" className="border text-white w-[206px] h-[223px] flex flex-col items-center justify-center">
                             <h1 className="text-[16px] font-bold">CLOTHS</h1>
@@ -61,8 +61,8 @@ const ProductListPage = () => {
                     
                 </div>
             </div>
-            <div className="w-full bg-white flex items-center justify-center py-10 max-md:w-full max-md:max-w-3xl max-md:block">
-                <div className="w-full max-w-[1050px] flex justify-between items-center">
+            <div className="w-full bg-white flex items-center justify-center py-10 max-md:w-full max-md:max-w-3xl">
+                <div className="w-full max-w-[1050px] flex justify-between items-center max-md:flex-col max-md:gap-6">
                     <h6 className="text-[14px] text-[#737373] font-bold">Showing all 12 results</h6>
                     <div className="flex items-center jusity-center gap-2">
                         <h6 className="text-[14px] text-[#737373] font-bold">Views: </h6>
@@ -93,7 +93,7 @@ const ProductListPage = () => {
             </div>
         </section>
         <section className="w-full max-w-[1439px] bg-[#FAFAFA] py-[50px] flex flex-col items-center justify-center max-md:w-full max-md:max-w-3xl">
-            <div className="w-[1050px] flex items-center gap-20">
+            <div className="w-[1050px] flex items-center gap-20 max-md:flex-col">
                 <Image src={"/icons/brand-logo-1.svg"} 
                     alt={"icon"} 
                     width={"103"} 

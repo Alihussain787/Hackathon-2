@@ -6,8 +6,8 @@ const Shop = () => {
     return(
         <div>
             <Header />
-            <div className="w-full bg-[#FAFAFA] flex items-center justify-center py-10 max-md:w-full max-md:max-w-3xl max-md:block">
-                <div className="w-[1050px] flex items-center justify-start gap-2s">
+            <div className="w-full bg-[#FAFAFA] flex items-center justify-center py-10 max-md:w-full max-md:max-w-3xl max-md:mt-[870px]">
+                <div className="w-[1050px] flex items-center justify-start gap-2 max-md:justify-center">
                     <Link href="/" className="p-[10px] cursor-pointer">Home</Link>
                         <span>
                             <Image src={"/icons/arrow-right-2.svg"} 
@@ -19,8 +19,8 @@ const Shop = () => {
                 </div>
             </div>
         <section className="w-full max-w-[1439px] bg-[#FAFAFA] py-2 flex flex-col items-center justify-center max-md:w-full max-md:max-w-3xl">
-            <div className="w-full max-w-[1050px] flex gap-10 pb-[40px]">
-                <div className="w-1/2 flex flex-col gap-2">
+            <div className="w-full max-w-[1050px] flex gap-10 pb-[40px] max-md:flex-col">
+                <div className="w-1/2 flex flex-col gap max-md:gap-2">
                     <div className="spc-img w-[506px] h-[450px] p-10 flex justify-between">
                         <Image src={"/icons/carousel-control-prev.svg"} 
                             alt={"icon"} 
@@ -42,9 +42,9 @@ const Shop = () => {
                             height={"75"}/>
                     </div>
                 </div>
-                <div className="w-1/2 flex flex-col gap-6 p-6">
+                <div className="w-1/2 flex flex-col gap-6 p-6 max-md:w-full">
                     <h4 className="text-[20px] text-[#252B42]">Floating Phone</h4>
-                    <div className="flex gap-2 ">
+                    <div className="flex gap-2">
                         <Image src={"/icons/5-stars.svg"} 
                             alt={"icon"} 
                             width={"130"} 
@@ -90,7 +90,7 @@ const Shop = () => {
                     <p className="text-[14px] text-[#737373] font-semibold">Reviews (0)</p>
                 </div>
             </div>
-            <div className="w-[1050px] py-10 flex items-center justify-center gap-12">
+            <div className="w-[1050px] py-10 flex items-center justify-center gap-12 max-md:flex-col">
                     <div className="w-1/3"><Image src={"/image/bsp-9.svg"} 
                                 alt={"icon"} 
                                 width={"316"} 
@@ -174,11 +174,11 @@ const Shop = () => {
         </section>
 
         <section className="w-full bg-[#FAFAFA] max-w-[1439px] pb-[100px] flex flex-col items-center justify-center max-md:w-full max-md:max-w-3xl">
-            <div className="w-[1050px] flex flex-col gap-6">
-                <div className="w-[1050px] border-b py-6">
-                     <h1 className="text-[24] font-bold">BESTSELLER PRODUCTS</h1>
+            <div className="w-[1050px] flex flex-col gap-6 max-md:max-w-3xl">
+                <div className="py-6 border-b max-md:py-0 max-md:pt-6 max-md:border-b-0">
+                     <h1 className="text-[24] font-bold max-md:text-center">BESTSELLER PRODUCTS</h1>
                 </div>
-                <div className="fp">
+                <div className="fp3">
                     <div className="flex bg-white flex-col gap-6 items-center">
                         <Image src={"image/bsp-1.svg"} 
                             alt={"image"} 
@@ -255,7 +255,7 @@ const Shop = () => {
             </div>
         </section>
         <section className="w-full max-w-[1439px] bg-[#FAFAFA] py-[50px] flex flex-col items-center justify-center max-md:w-full max-md:max-w-3xl">
-            <div className="w-[1050px] flex items-center gap-20">
+            <div className="w-[1050px] flex items-center gap-20 max-md:flex-col">
                 <Image src={"/icons/brand-logo-1.svg"} 
                     alt={"icon"} 
                     width={"103"} 

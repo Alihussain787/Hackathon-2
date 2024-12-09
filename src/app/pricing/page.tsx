@@ -8,7 +8,7 @@ const Pricing = () => {
         <div>
             <section className="w-full max-w-[1439px] bg-[#FAFAFA]">
                 <Header />
-            <div className="w-full max-w-[1439px] flex items-center justify-center">
+            <div className="w-full max-w-[1439px] flex items-center justify-center max-md:mt-[505px]">
                 <div className="w-full max-w-[1050px] py-20 bg-white flex items-center justify-center">
                     <div className="flex flex-col items-center justify-center">
                         <h5 className="text-[#737373] font-bold text-[16px]">PRICING</h5>
@@ -45,7 +45,7 @@ const Pricing = () => {
         </section>
 
         <section className="w-full max-w-[1439px] flex items-center justify-center">
-            <div className="w-full max-w-[985px] flex items-center justify-center">
+            <div className="w-full max-w-[985px] flex items-center justify-center max-md:flex-col max-md:gap-6 max-md:bg-[#FAFAFA]">
                 <div className="h-[350px] pt-10 pb-2 px-4 border border-[#23A6F0] rounded flex flex-col gap-6 items-center justify-center">
                     <h3 className="text-[#252B42] text-[24] font-bold">FREE</h3>
                     <h5 className="text-[#737373] w-[160px] text-center">Organize across all 
@@ -102,9 +102,9 @@ const Pricing = () => {
             </div>
         </section>
 
-        <section className="mt-[-50px] relative z-10 w-full max-w-[1439px] bg-[#FAFAFA] py-[50px] flex flex-col items-center justify-center gap-8 max-md:w-full max-md:max-w-3xl">
+        <section className="mt-[-50px] relative z-10 w-full max-w-[1439px] bg-[#FAFAFA] py-[50px] flex flex-col items-center justify-center gap-8 max-md:w-full max-md:max-w-3xl max-md:mt-0">
             <h4 className="text-[#252B42] text-[20px]">Trusted By Over 4000 Big Companies</h4>
-            <div className="w-[1050px] flex items-center gap-20">
+            <div className="w-[1050px] flex items-center gap-20 max-md:flex-col">
                 <Image src={"/icons/brand-logo-1.svg"} 
                     alt={"icon"} 
                     width={"103"} 

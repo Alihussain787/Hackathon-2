@@ -1,4 +1,5 @@
 import Header from "./components/header/page";
+import Header3 from "./components/header3/page";
 import Footer from "./components/footer/page";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,11 +7,15 @@ import Link from "next/link";
 const mainPage = () => {
     return(
     <div>
-        <Header />
-
-        <section id="backImg" className="w-full max-w-[1439px] h-[716px] flex items-center justify-center max-md:w-full max-md:max-w-3xl max-md:flex-col">
-            <div className="text-white w-[1044px] h-[651px] flex flex-col gap-[35px] justify-center max-md:px-6 max-md:w-full max-md:max-w-3xl max-md:py-[100px] max-md:gap-[24px]">
-                <div className="w-[580px] flex flex-col gap-[35px] max-md:w-full max-md:max-w-3xl max-md:gap-[24px]">
+        <div className="max-md:hidden">
+            <Header/>
+        </div>
+        <div className="md:hidden">
+            <Header3 />
+        </div>
+        <section id="backImg" className="w-full max-w-[1439px] h-[716px] flex items-center justify-center max-md:w-full max-md:flex-col max-md:mt-[505px]">
+            <div className="text-white w-[1044px] h-[651px] flex flex-col gap-[35px] justify-center max-md:px-6 max-md:w-full max-md:py-[100px] max-md:gap-[24px] max-md:items-center">
+                <div className="w-[580px] flex flex-col gap-[35px] max-md:w-full max-md:max-w-3xl max-md:gap-[24px] max-md:text-center">
                     <p className="text-[16px] font-bold">SUMMER 2020</p>
                     <h1 className="text-[56px] font-bold">NEW COLLECTION</h1> 
                     <p className="text-[20px] text-[#FAFAFA]">We know how large objects will act, 
@@ -19,13 +24,13 @@ const mainPage = () => {
                 <button className="w-[221px] h-[62px] bg-[#2DC071] text-white font-bold text-[24px] rounded-[5px]">Shop Now</button>
             </div>
         </section>
-        <section className="full max-w-[1439px] bg-[#FAFAFA] flex flex-col items-center justify-center gap-[64px] py-[64px] max-md:w-full max-md:max-w-3xl">
+        <section className="full max-w-[1439px] bg-[#FAFAFA] flex flex-col items-center justify-center gap-[64px] py-[64px] max-md:w-full">
             <div className="w-[1050px] flex flex-col gap-10">
-                <div className="w-full flex flex-col items-center justify-center max-md:px-6 max-md:text-center">
+                <div className="w-full flex flex-col items-center justify-center max-md:text-center">
                     <h1 className="text-[24px] text-[#252B42] font-bold">EDITOR’S PICK</h1>
                     <p className="text-[14px] text-[#737373]">Problems trying to resolve the conflict between</p>
                 </div>
-                <div className="flex gap-8">
+                <div className="flex gap-8 max-md:hidden">
                     <Image src={"image/editor-1.svg"} 
                         alt={"image"} 
                         width={"510"} 
@@ -46,8 +51,26 @@ const mainPage = () => {
                     </div>
                 </div>
             </div>
+            <div className="md:hidden gap-8 flex flex-col gap-8">
+                    <Image src={"image/new-img.svg"} 
+                        alt={"image"} 
+                        width={"324"} 
+                        height={"500"}/>
+                     <Image src={"image/editor-2.svg"} 
+                        alt={"image"} 
+                        width={"324"} 
+                        height={"500"}/>
+                    <Image src={"image/editor-3.svg"} 
+                            alt={"image"} 
+                            width={"324"} 
+                            height={"242"}/>
+                    <Image src={"image/editor-4.svg"} 
+                            alt={"image"} 
+                            width={"324"} 
+                            height={"242"}/>
+                </div>
         </section>
-        <section className="w-full max-w-[1439px] bg-white flex flex-col items-center justify-center max-md:w-full max-md:max-w-3xl">
+        <section className="w-full max-w-[1439px] bg-white flex flex-col items-center justify-center py-10 max-md:w-full">
             <div className="w-[1050px] flex flex-col gap-10">
                 <div className="w-full flex flex-col items-center justify-center max-md:px-6 max-md:text-center">
                     <p className="text-[20px] text-[#737373]">Featured Products</p>
@@ -163,19 +186,19 @@ const mainPage = () => {
             </div>
         </section>
 
-        <section id="backImg2" className="w-full max-w-[1439px] h-[709px] px-[150px] flex items-center justify-center max-md:w-full max-md:max-w-3xl max-md:flex-col">
-            <div className="text-white w-1/2 flex flex-col gap-[35px] justify-center max-md:px-6 max-md:w-full max-md:max-w-3xl max-md:py-[100px] max-md:gap-[24px]">
-                <div className="w-[580px] pr-[100px] flex flex-col gap-[35px] max-md:w-full max-md:max-w-3xl max-md:gap-[24px]">
-                    <p className="text-[16px] font-bold">SUMMER 2020</p>
-                    <h1 className="text-[56px] font-bold">Vita Classic Product</h1> 
-                    <p className="text-[20px] text-[#FAFAFA]">We know how large objects will act, We know how are objects will act, We know</p>  
+        <section className="w-full bg-[#23856D] pt-20 max-w-[1439px] px-[150px] flex items-center justify-center max-md:w-full max-md:px-0 max-md:flex-col">
+            <div className="text-white w-1/2 flex flex-col gap-[35px] justify-center max-md:w-full max-md:items-center max-md:justify-center">
+                <div className="w-[580px] pr-[100px] flex flex-col gap-[35px] max-md:w-full max-md:w-full max-md:items-center max-md:pr-0">
+                    <p className="text-[16px] font-bold max-md:">SUMMER 2020</p>
+                    <h1 className="text-[56px] font-bold max-md:text-[40px]">Vita Classic Product</h1> 
+                    <p className="text-[20px] text-[#FAFAFA] max-md:text-center max-md:w-[350px]">We know how large objects will act, We know how are objects will act, We know</p>  
                 </div>
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-6 max-md:flex-col">
                     <p className="text-[24px] font-bold">$16.48</p>
                     <button className="w-[221px] h-[62px] bg-[#2DC071] text-white font-bold text-[24px] rounded-[5px]">Shop Now</button>
                 </div>
             </div>
-            <div className="w-1/2 h-full flex items-end justify-end">
+            <div className="w-1/2 h-full flex items-end justify-end max-md:mt-10">
                 <Image src={"image/hero-3.svg"} 
                     alt={"image"} 
                     width={"443"} 
@@ -183,9 +206,9 @@ const mainPage = () => {
             </div>
         </section>
 
-        <section className="w-full max-w-[1439px] px-[100px] bg-white h-[682px] flex items-center justify-center max-md:w-full max-md:max-w-3xl max-md:flex-col">
+        <section className="w-full max-w-[1439px] px-[100px] bg-white h-[682px] flex items-center justify-center max-md:w-full max-md:flex-col">
             
-            <div className="w-1/2 h-full">
+            <div className="w-1/2 h-full max-md:hidden">
                 <Image src={"image/hero-4.svg"} 
                     alt={"image"} 
                     width={"632"} 
@@ -193,19 +216,25 @@ const mainPage = () => {
             </div>
             
             <div className="w-1/2 pr-[100px] flex flex-col justify-center gap-8 max-md:px-6 max-md:w-full max-md:max-w-3xl max-md:py-[100px] max-md:gap-[24px]">
-                <div className="w-[580px] pl-[50px] flex flex-col gap-6 max-md:w-full max-md:max-w-3xl max-md:gap-[24px]">
+                <div className="w-[580px] pl-[50px] flex flex-col gap-6 max-md:w-full max-md:items-center">
                     <p className="text-[16px] font-bold text-[#BDBDBD]">SUMMER 2020</p>
-                    <h1 className="w-[375px] text-[40px] font-bold">Part of the Neural Universe</h1> 
-                    <p className="text-[20px] text-[#737373]">We know how large objects will act, We know how are objects will act, We know</p>  
+                    <h1 className="w-[375px] text-[40px] font-bold max-md:text-center">Part of the Neural Universe</h1> 
+                    <p className="text-[20px] text-[#737373] max-md:text-center">We know how large objects will act, We know how are objects will act, We know</p>  
                 </div>
-                <div className="pl-[50px] flex items-center gap-2">
-                    <button className="w-[221px] h-[62px] bg-[#2DC071] text-white font-bold text-[24px] rounded-[5px]">Buy Now</button>
-                    <button className="w-[221px] h-[62px] bg-white text-[#2DC071] border border-[#2DC071] font-bold text-[24px] rounded-[5px]">Read More</button>
+                <div className="pl-[50px] flex items-center gap-2 max-md:flex-col max-md:gap-4">
+                    <button className="w-[221px] h-[62px] bg-[#2DC071] text-white font-bold text-[24px] rounded-[5px] max-md:bg-[#23A6F0]">Buy Now</button>
+                    <button className="w-[221px] h-[62px] bg-white text-[#2DC071] border border-[#2DC071] font-bold text-[24px] rounded-[5px] max-md:text-[#23A6F0] max-md:border-[#23A6F0]">Read More</button>
                 </div>
+            </div>
+            <div className="w-1/2 h-full md:hidden">
+                <Image src={"image/hero-4.svg"} 
+                    alt={"image"} 
+                    width={"632"} 
+                    height={"491"}/>
             </div>
         </section>
 
-        <section className="w-full pt-[100px] max-w-[1439px] bg-white flex flex-col items-center justify-center max-md:w-full max-md:max-w-3xl">
+        <section className="w-full pt-[100px] max-w-[1439px] bg-white flex flex-col items-center justify-center max-md:w-full">
             <div className="w-[1050px] flex flex-col gap-10">
                 <div className="w-full flex flex-col items-center justify-center max-md:px-6 max-md:text-center">
                     <p className="text-[14px] text-[#23A6F0]">Practice Advice</p>
@@ -213,8 +242,8 @@ const mainPage = () => {
                     <p className="text-[14px] text-[#737373] text-center">Problems trying to resolve the conflict between 
                         <br/>the two major realms of Classical physics: Newtonian mechanics</p>
                 </div>
-                <div className="fp2">
-                    <div className="flex flex-col gap-4 border border-b-[3px]">
+                <div className="fp2 flex items-center justify-center gap-4 max-md:flex-col">
+                    <div className="flex flex-col w-[348px] gap-4 border border-b-[3px]">
                         <Image src={"image/fp-img-1.svg"} 
                             alt={"image"} 
                             width={"348"} 
@@ -256,7 +285,7 @@ const mainPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-4 border border-b-[3px]">
+                    <div className="flex flex-col w-[348px] border gap-4 border border-b-[3px]">
                         <Image src={"image/fp-img-2.svg"} 
                             alt={"image"} 
                             width={"348"} 
@@ -298,7 +327,7 @@ const mainPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-4 border border-b-[3px]">
+                    <div className="flex flex-col w-[348px] border gap-4 border border-b-[3px]">
                         <Image src={"image/fp-img-3.svg"} 
                             alt={"image"} 
                             width={"348"} 

@@ -6,29 +6,36 @@ const AboutPage = () => {
     return(
         <div>
         <Header />
-        <section className="container w-full max-w-[1439px] h-[709px] flex items-center justify-center max-md:w-full max-md:max-w-3xl max-md:flex-col">
-        <div className="w-[1044px]">
-            <div className="text-black flex flex-col gap-[35px] justify-center max-md:px-6 max-md:w-full max-md:max-w-3xl max-md:py-[100px] max-md:gap-[24px]">
-                <div className="w-[580px] pr-[100px] flex flex-col gap-[35px] max-md:w-full max-md:max-w-3xl max-md:gap-[24px]">
+        <section className="w-full max-w-[1439px] flex items-center justify-center max-md:mt-[505px]">
+        <div className="w-[1044px] flex justify-between max-md:flex-col">
+            <div className="text-black flex flex-col gap-[35px] justify-center">
+                <div className="flex flex-col gap-[35px] max-md:items-center">
                     <p className="text-[16px] font-bold text-[#252B42]">ABOUT COMPANY</p>
                     <h1 className="text-[58px] font-bold">ABOUT US</h1> 
-                    <p className="text-[20px] text-[#737373]">We know how large objects will act, but things on a small scale</p>  
+                    <p className="text-[20px] text-[#737373] max-md:w-[350px] max-md:text-center">We know how large objects will act, but things on a small scale</p>  
                 </div>
-                <div className="w-[195px] flex items-center justify-center rounded text-[14px] bg-[#23A6F0] text-white font-bold flex items-center gap-[5px]">
+                <div className="w-[195px] flex items-center justify-center rounded text-[14px] bg-[#23A6F0] text-white font-bold flex items-center gap-[5px] max-md:ml-[30%]">
                     <Link href={"#"} className="flex gap-2 py-4 px-4 text-center">Become a member</Link>
                 </div>
+            </div>
+
+            <div className="flex items-center justify-center">
+                <Image src={"image/about-img.svg"} 
+                    alt={"image"} 
+                        width={"387"} 
+                        height={"440"}/>
             </div>
         </div>
         </section>
         <section className="w-full max-w-[1439px] bg-white flex flex-col items-center justify-center">
-            <div className="w-full max-w-[1050px] flex items-center justify-center">
-                <div className="flex flex-col gap-4 py-10">
+            <div className="w-full max-w-[1050px] flex items-center justify-center max-md:flex-col">
+                <div className="flex flex-col gap-4 py-10 max-md:items-center max-md:justify-center">
                     <p className="text-[14px] text-[#E74040]">Problems trying</p>
-                    <h3 className="text-[24px] font-bold text-[#252B42]">Met minim Mollie non desert Alamo est sit cliquey dolor do met sent.</h3>
+                    <h3 className="text-[24px] font-bold text-[#252B42] max-md:w-[400px] max-md:text-center">Met minim Mollie non desert Alamo est sit cliquey dolor do met sent.</h3>
                 </div>
-                <p className="text-[14px] text-[#737373]">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+                <p className="text-[14px] text-[#737373] max-md:w-[400px] max-md:text-center">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
             </div>
-            <div className="w-full max-w-[1050px] flex gap-12 items-center justify-center">
+            <div className="w-full max-w-[1050px] flex gap-12 items-center justify-center max-md:flex-col">
                 <div className="p-12">
                     <h1 className="text-[58px] font-bold text-[#252B42]">15K</h1>
                     <p className="text-[#737373] text-[14px]">Happy Customers</p>
@@ -55,7 +62,7 @@ const AboutPage = () => {
                     <p className="text-[14px] text-[#737373] w-[414px] text-center">Problems trying to resolve the conflict between 
                     the two major realms of Classical physics: Newtonian mechanics </p>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex gap-4 max-md:flex-col">
                     <div className="flex flex-col gap-4 items-center">
                         <Image src={"image/media.svg"} 
                             alt={"image"} 
@@ -150,7 +157,7 @@ const AboutPage = () => {
                     <p className="text-[14px] text-[#737373] w-[414px] text-center">Problems trying to resolve the conflict between 
                     the two major realms of Classical physics: Newtonian mechanics </p>
             </div>
-            <div className="w-[1050px] flex items-center gap-20">
+            <div className="w-[1050px] flex items-center gap-20 max-md:flex-col">
                 <Image src={"/icons/brand-logo-1.svg"} 
                     alt={"icon"} 
                     width={"103"} 
@@ -179,18 +186,18 @@ const AboutPage = () => {
         </section>
 
         <section className="w-full max-w-[1439px] flex items-center justify-center">
-        <div className="w-full flex bg-[#2A7CC7] justify-between">
-            <div className="text-white flex flex-col pl-[200px] gap-[20px] justify-center max-md:px-6 max-md:w-full max-md:max-w-3xl max-md:py-[100px] max-md:gap-[24px]">
-                <div className="w-[580px] pr-[100px] flex flex-col gap-[35px] max-md:w-full max-md:max-w-3xl max-md:gap-[24px]">
+        <div className="w-full flex bg-[#2A7CC7] justify-between max-md:flex-col max-md:gap-10">
+            <div className="text-white flex flex-col gap-[20px] justify-center max-md:w-full max-md:max-w-3xl">
+                <div className="pl-[200px] flex flex-col gap-[35px] max-md:w-full max-md:max-w-3xl max-md:gap-[24px] max-md:pl-[10px] max-md:p-20 max-md:items-center">
                     <p className="text-[16px] font-bold text-white">WORK WITH US</p>
                     <h1 className="text-[40px] font-bold">Now Let’s grow Yours</h1> 
-                    <p className="text-[14px] text-white">The gradual accumulation of information about atomic and small-scale behavior during the first quarter of the 20th </p>  
+                    <p className="text-[14px] text-white max-md:text-center">The gradual accumulation of information about atomic and small-scale behavior during the first quarter of the 20th </p>  
                 </div>
-                <div className="w-[130px] flex items-center justify-center rounded text-[14px] border border-white text-white font-bold flex items-center gap-[5px]">
+                <div className="ml-[200px] w-[130px] flex items-center justify-center rounded text-[14px] border border-white text-white font-bold flex items-center gap-[5px] max-md:ml-[35%] max-md:mb-20">
                     <Link href={"#"} className="flex gap-2 py-4 px-4 text-center">Button</Link>
                 </div>
             </div>
-            <div className="">
+            <div className="max-md:hidden">
                 <Image src={"image/background-img.svg"} 
                             alt={"image"} 
                             width={"590"} 

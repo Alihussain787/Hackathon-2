@@ -6,17 +6,17 @@ const Contact = () => {
     return(
         <div>
         <Header />
-        <section className="container2 w-full max-w-[1439px] h-[709px] flex items-center justify-center max-md:w-full max-md:max-w-3xl max-md:flex-col">
+        <section className="container2 w-full max-w-[1439px] py-20 flex items-center justify-center  max-md:mt-[505px]">
         <div className="w-[1044px]">
-            <div className="text-black flex flex-col gap-[35px] justify-center max-md:px-6 max-md:w-full max-md:max-w-3xl max-md:py-[100px] max-md:gap-[24px]">
-                <div className="w-[580px] pr-[100px] flex flex-col gap-[35px] max-md:w-full max-md:max-w-3xl max-md:gap-[24px]">
+            <div className="text-black flex flex-col gap-[35px] justify-center">
+                <div className=" flex flex-col gap-[35px] max-md:items-center">
                     <p className="text-[16px] font-bold text-[#252B42]">CONTACT US</p>
-                    <h1 className="text-[58px] text-[#252B42] font-bold">Get in touch today!</h1> 
-                    <p className="text-[20px] text-[#737373]">We know how large objects will act, but things on a small scale</p>  
+                    <h1 className="text-[58px] text-[#252B42] font-bold max-md:text-[40px]">Get in touch today!</h1> 
+                    <p className="text-[20px] text-[#737373] max-md:w-[350px] max-md:text-center">We know how large objects will act, but things on a small scale</p>  
                     <p className="text-[24px] font-bold text-[#252B42]">Phone : +451 215 215 </p>
                     <p className="text-[24px] font-bold text-[#252B42]">Fax : +451 215 215</p>
                 </div>
-                <div className="flex gap-[34px]">
+                <div className="border flex gap-[34px] max-md:justify-center">
                     <Image src={"icons/tw-icon.svg"} 
                         alt={"image"} 
                         width={"30"} 
@@ -40,12 +40,12 @@ const Contact = () => {
 
         <section className="w-full max-w-[1439px] flex items-center justify-center">
         <div className="w-full max-w-[1050px] py-16 flex gap-8 flex-col items-center justify-center">
-            <div className="w-full flex flex-col gap-6 items-center justify-center max-md:px-6 max-md:text-center">
+            <div className="w-full flex flex-col gap-6 items-center justify-center">
                     <h4 className="text-[14px] text-[#252B42] font-bold">VISIT OUR OFFICE</h4>
                     <h1 className="text-[40px] pb-[70px] text-[#252B42] font-bold w-[531px] text-center">We help small businesses with big ideas</h1>
-                <div className="w-full max-w-[985px] flex items-center justify-center">
+                <div className="w-full max-w-[985px] flex items-center justify-center max-md:flex-col">
                 <div className="h-[403px] p-[80px] px-[40px] flex flex-col gap-6 items-center justify-center">
-                    <Image src={"/icons/location-icon.svg"} 
+                    <Image src={"/icons/phone-icon.svg"} 
                     alt={"icon"} 
                     width={"72"} 
                     height={"72"}/>
@@ -68,7 +68,7 @@ const Contact = () => {
                     <button className="text-[14px] font-bold py-[15px] px-[36px] rounded-[37px] text-[#23A6F0] border border-[#23A6F0]">Submit Request</button>
                 </div>
                 <div className="h-[403px] p-[80px] px-[40px] flex flex-col gap-6 items-center justify-center">
-                    <Image src={"/icons/location-icon.svg"} 
+                    <Image src={"/icons/main-icon.svg"} 
                     alt={"icon"} 
                     width={"72"} 
                     height={"72"}/>

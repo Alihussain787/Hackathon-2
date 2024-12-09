@@ -62,39 +62,49 @@ const header = () => {
                 <div className="w-full bg-[#FFFFFF] flex items-center py-[12px] px-[38px] max-md:bg-white max-md:py-[24px]">
                 <nav className="w-full flex justify-between gap-28 max-md:w-full max-md:max-w-3xl max-md:px-6">
                     <div className="text-[24px] cursor-pointer">
-                        <h3 className="font-bold max-md:font-bold max-md:text-[24px]">Bandage</h3>
+                        <Link href="/"><h3 className="font-bold max-md:font-bold max-md:text-[24px]">Bandage</h3></Link>
                     </div>
                     <div className="w-full bg-white flex justify-between gap-[32px] max-md:hidden">
                         <div className="flex items-center gap-2s">
-                            <Link href="/" className="p-[10px] cursor-pointer">Home</Link>
-                            <Link href="/shop/" className="p-[10px] cursor-pointer">Shop</Link>
-                            <Link href="/about/" className="p-[10px] cursor-pointer">About</Link>
-                            <Link href="#" className="p-[10px] cursor-pointer">Blog</Link>
-                            <Link href="/contact/" className="p-[10px] cursor-pointer">Contact</Link>
-                            <Link href="/team/" className="p-[10px] cursor-pointer">Pages</Link>
+                            <Link href="/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Home</Link>
+                            <div className="flex">
+                                <Link href="/shop/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Shop</Link>
+                                <Image className="cursor-pointer" src={"/icons/arrow-down.svg"} 
+                                    alt={"icon"} 
+                                    width={"10"} 
+                                    height={"10"}/>
+                            </div>
+                            <Link href="/about/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">About</Link>
+                            <Link href="#" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Blog</Link>
+                            <Link href="/contact/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Contact</Link>
+                            <Link href="/team/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Pages</Link>
                         </div>
                         <div className="flex items-center gap-[20px]">
                            <div className="text-[#23A6F0] font-bold flex items-center gap-[5px]">
-                                <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/man.svg"} 
+                                <Image src={"/icons/man.svg"} 
                                     alt={"icon"} 
                                     width={"12"} 
                                     height={"12"}/>
                                 <Link href={"#"}>Login / Register</Link>
                            </div>
-                           <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/search.svg"} 
+                           <Image className="cursor-pointer" src={"/icons/search.svg"} 
                                 alt={"icon"} 
                                 width={"16"} 
                                 height={"16"}/>
-
-                            <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/cart.svg"} 
+                            <div className="flex gap-2 text-[#23A6F0]">
+                                 <Image className="cursor-pointer" src={"/icons/cart.svg"} 
                                 alt={"icon"} 
                                 width={"16"} 
                                 height={"16"}/>
-                            
-                            <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/heart.svg"} 
+                                1
+                            </div>
+                            <div className="flex gap-2 text-[#23A6F0]">
+                                <Image className="cursor-pointer" src={"/icons/heart.svg"} 
                                 alt={"icon"} 
                                 width={"16"} 
                                 height={"16"}/>
+                                1
+                            </div>
                         </div>
                     </div>
                 </nav>

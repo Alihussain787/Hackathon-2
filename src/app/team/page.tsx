@@ -8,11 +8,11 @@ const Team = () => {
         <div>
             <section className="w-full max-w-[1439px] bg-[#FAFAFA]">
                 <Header />
-            <div className="w-full max-w-[1439px] flex items-center justify-center">
+            <div className="w-full max-w-[1439px] flex items-center justify-center max-md:mt-[505px]">
                 <div className="w-full max-w-[1050px] py-20 bg-white flex items-center justify-center">
                     <div className="flex flex-col items-center justify-center">
                         <h5 className="text-[#737373] font-bold text-[16px]">WHAT WE DO</h5>
-                        <h1 className="text-[58px] font-bold text-[#252B42]">Innovation tailored for you</h1>
+                        <h1 className="text-[58px] font-bold text-[#252B42] max-md:text-[40px] max-md:w-[316px] max-md:text-center">Innovation tailored for you</h1>
                         <div className="flex items-center justify-center gap-2s">
                         <Link href="/" className="p-[10px] cursor-pointer">Home</Link>
                         <span>
@@ -30,7 +30,7 @@ const Team = () => {
         </section>
 
         <section className="w-full max-w-[1439px] bg-white py-10 flex flex-col items-center justify-center max-md:w-full max-md:max-w-3xl">
-            <div className="w-full flex items-center justify-center gap-[10px]">
+            <div className="w-full flex items-center justify-center gap-[10px] max-md:flex-col">
                 <div>
                     <Image src={"image/gallery-img1.svg"} 
                         alt={"image"} 
