@@ -70,8 +70,8 @@ const header = () => {
                             <Link href="/shop/" className="p-[10px] cursor-pointer">Shop</Link>
                             <Link href="/about/" className="p-[10px] cursor-pointer">About</Link>
                             <Link href="#" className="p-[10px] cursor-pointer">Blog</Link>
-                            <Link href="#" className="p-[10px] cursor-pointer">Contact</Link>
-                            <Link href="#" className="p-[10px] cursor-pointer">Pages</Link>
+                            <Link href="/contact/" className="p-[10px] cursor-pointer">Contact</Link>
+                            <Link href="/team/" className="p-[10px] cursor-pointer">Pages</Link>
                         </div>
                         <div className="flex items-center gap-[20px]">
                            <div className="text-[#23A6F0] font-bold flex items-center gap-[5px]">

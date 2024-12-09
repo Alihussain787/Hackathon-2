@@ -112,3 +112,21 @@ body {
   grid-template-rows: repeat(3, 1fr);
   gap: 50px
 }
+.team-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px
+}
+.team-gallery{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px
+}
+.container2{
+  background-image: url('/image/background-img-hero.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

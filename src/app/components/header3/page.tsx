@@ -16,7 +16,7 @@ const header2 = () => {
                             <Link href="/" className="p-[10px] cursor-pointer">Home</Link>
                             <Link href="/shop/" className="p-[10px] cursor-pointer">Products</Link>
                             <Link href="/pricing/" className="p-[10px] cursor-pointer">Pricing</Link>
-                            <Link href="#" className="p-[10px] cursor-pointer">Contact</Link>
+                            <Link href="/contact/" className="p-[10px] cursor-pointer">Contact</Link>
                         </div>
                         <div className="text-[14px] flex items-center gap-[20px]">
                            <div className="text-[#23A6F0] font-bold flex items-center gap-[5px]">
