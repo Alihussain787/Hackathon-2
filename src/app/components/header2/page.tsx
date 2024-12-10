@@ -75,9 +75,9 @@ const header2 = () => {
                                     height={"10"}/>
                             </div>
                             <Link href="/about/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">About</Link>
-                            <Link href="#" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Blog</Link>
+                            <Link href="/team/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Blog</Link>
                             <Link href="/contact/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Contact</Link>
-                            <Link href="/team/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Pages</Link>
+                            <Link href="/pages/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Pages</Link>
                             <div className="flex flex-col items-center gap-[20px] md:hidden">
                             <div className="text-[#23A6F0] font-bold flex items-center gap-[5px]">
                                 <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/man.svg"} 

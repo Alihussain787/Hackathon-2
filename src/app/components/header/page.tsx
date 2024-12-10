@@ -75,9 +75,9 @@ const header = () => {
                                     height={"10"}/>
                             </div>
                             <Link href="/about/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">About</Link>
-                            <Link href="#" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Blog</Link>
+                            <Link href="/team/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Blog</Link>
                             <Link href="/contact/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Contact</Link>
-                            <Link href="/team/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Pages</Link>
+                            <Link href="/pages/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Pages</Link>
                         </div>
                         <div className="flex items-center gap-[20px]">
                            <div className="text-[#23A6F0] font-bold flex items-center gap-[5px]">
