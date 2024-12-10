@@ -16,7 +16,7 @@ const Contact = () => {
                     <p className="text-[24px] font-bold text-[#252B42]">Phone : +451 215 215 </p>
                     <p className="text-[24px] font-bold text-[#252B42]">Fax : +451 215 215</p>
                 </div>
-                <div className="border flex gap-[34px] max-md:justify-center">
+                <div className="flex gap-[34px] max-md:justify-center">
                     <Image src={"icons/tw-icon.svg"} 
                         alt={"image"} 
                         width={"30"} 
