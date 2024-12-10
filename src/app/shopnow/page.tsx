@@ -6,7 +6,7 @@ const Shop = () => {
     return(
         <div>
             <Header />
-            <div className="w-full bg-[#FAFAFA] flex items-center justify-center py-10 max-md:w-full max-md:max-w-3xl max-md:mt-[870px]">
+            <div className="w-full max-w-[1439px] bg-[#FAFAFA] flex items-center justify-center py-10 max-md:w-full max-md:max-w-3xl max-md:mt-[870px]">
                 <div className="w-[1050px] flex items-center justify-start gap-2 max-md:justify-center">
                     <Link href="/" className="p-[10px] cursor-pointer">Home</Link>
                         <span>

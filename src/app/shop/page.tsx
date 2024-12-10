@@ -7,7 +7,7 @@ const ProductListPage = () => {
     return(
         <div>
         <Header />
-        <section className="w-full bg-[#FAFAFA] flex flex-col items-center justify-center max-md:mt-[870px]">
+        <section className="w-full max-w-[1439px] bg-[#FAFAFA] flex flex-col items-center justify-center max-md:mt-[870px]">
             <div className="w-full max-w-[1050px] bg-[#FAFAFA] flex items-center justify-center py-10 max-md:w-full max-md:max-w-3xl max-md:block">
                 <div className="w-full flex items-center max-md:justify-center">
                         <h1 className="text-24px text-[#252B42] font-bold">Shop</h1>
