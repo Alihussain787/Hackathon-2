@@ -14,21 +14,21 @@ const header2 = () => {
                                 alt={"icon"} 
                                 width={"16"} 
                                 height={"16"}/>
-                            <p>(225) 555-0118</p>
+                            <p className="max-lg:text-[14px]">(225) 555-0118</p>
                         </div>
                         <div className="flex gap-[5px] p-[10px]">
                         <Image src={"/icons/mail.svg"} 
                                 alt={"icon"} 
                                 width={"16"} 
                                 height={"16"}/>
-                            <p>michelle.rivera@example.com</p>
+                            <p className="max-lg:text-[14px]">michelle.rivera@example.com</p>
                         </div>
                     </div>
                     <div className="font-bold flex items-center">
-                        <p>Follow Us  and get a chance to win 80% off</p>
+                        <p className="max-lg:text-[14px]">Follow Us  and get a chance to win 80% off</p>
                     </div>
                     <div className="flex gap-2 font-bold items-center">
-                        <p>Follow us : </p>
+                        <p className="max-lg:text-[14px]">Follow us : </p>
                         <ul className="flex items-center justify-center gap-[12px]">
                             <li className="cursor-pointer">
                                 <Image src={"icons/insta.svg"} 
@@ -66,18 +66,18 @@ const header2 = () => {
                     </div>
                     <div className="w-full bg-white flex justify-between gap-[32px]">
                         <div className="flex items-center gap-2 max-md:gap-[30px] max-md:flex-col max-md:bg-white max-md:absolute max-md:top-14 max-md:left-[-24px] max-md:w-full max-md:py-20 max-md:text-center">
-                            <Link href="/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Home</Link>
+                            <Link href="/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px] hover:text-[#23A6F0]">Home</Link>
                             <div className="flex">
-                                <Link href="/shop/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Shop</Link>
+                                <Link href="/shop/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px] hover:text-[#23A6F0]">Shop</Link>
                                 <Image className="cursor-pointer" src={"/icons/arrow-down.svg"} 
                                     alt={"icon"} 
                                     width={"10"} 
                                     height={"10"}/>
                             </div>
-                            <Link href="/about/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">About</Link>
-                            <Link href="/team/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Blog</Link>
-                            <Link href="/contact/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Contact</Link>
-                            <Link href="/pages/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px]">Pages</Link>
+                            <Link href="/about/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px] hover:text-[#23A6F0]">About</Link>
+                            <Link href="/team/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px] hover:text-[#23A6F0]">Blog</Link>
+                            <Link href="/contact/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px] hover:text-[#23A6F0]">Contact</Link>
+                            <Link href="/pages/" className="text-[#737373] font-bold text-[14px] p-[10px] cursor-pointer max-md:text-[30px] hover:text-[#23A6F0]">Pages</Link>
                             <div className="flex flex-col items-center gap-[20px] md:hidden">
                             <div className="text-[#23A6F0] font-bold flex items-center gap-[5px]">
                                 <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/man.svg"} 

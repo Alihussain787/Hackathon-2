@@ -10,46 +10,46 @@ const header = () => {
                 <div className="w-full text-white flex justify-between py-[10px] px-[38px] max-md:hidden">
                     <div className="flex gap-[10px] font-bold">
                         <div className="flex gap-[5px] py-[10px] ">
-                            <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/phone.svg"} 
+                            <Image src={"/icons/phone.svg"} 
                                 alt={"icon"} 
                                 width={"16"} 
                                 height={"16"}/>
-                            <p>(225) 555-0118</p>
+                            <p className="max-lg:text-[14px]">(225) 555-0118</p>
                         </div>
                         <div className="flex gap-[5px] p-[10px]">
-                        <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/mail.svg"} 
+                        <Image src={"/icons/mail.svg"} 
                                 alt={"icon"} 
                                 width={"16"} 
                                 height={"16"}/>
-                            <p>michelle.rivera@example.com</p>
+                            <p className="max-lg:text-[14px]">michelle.rivera@example.com</p>
                         </div>
                     </div>
                     <div className="font-bold flex items-center">
-                        <p>Follow Us  and get a chance to win 80% off</p>
+                        <p className="max-lg:text-[14px]">Follow Us  and get a chance to win 80% off</p>
                     </div>
                     <div className="flex gap-2 font-bold items-center">
-                        <p>Follow us : </p>
+                        <p className="max-lg:text-[14px]">Follow us : </p>
                         <ul className="flex items-center justify-center gap-[12px]">
                             <li className="cursor-pointer">
-                                <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"icons/insta.svg"} 
+                                <Image src={"icons/insta.svg"} 
                                 alt={"icon"} 
                                 width={"16"} 
                                 height={"16"}/>
                             </li>
                             <li className="cursor-pointer">
-                                <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/youtube.svg"} 
+                                <Image src={"/icons/youtube.svg"} 
                                 alt={"icon"} 
                                 width={"16"} 
                                 height={"16"}/>
                             </li>
                             <li className="cursor-pointer">
-                                <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/facebook.svg"} 
+                                <Image src={"/icons/facebook.svg"} 
                                 alt={"icon"} 
                                 width={"16"} 
                                 height={"16"}/>
                             </li>
                             <li className="cursor-pointer">
-                                <Image className="rounded-tl-[25%] rounded-br-[25%]"src={"/icons/twitter.svg"} 
+                                <Image src={"/icons/twitter.svg"} 
                                 alt={"icon"} 
                                 width={"16"} 
                                 height={"16"}/>
@@ -66,18 +66,18 @@ const header = () => {
                     </div>
                     <div className="w-full bg-white flex justify-between gap-[32px] max-md:hidden">
                         <div className="flex items-center gap-2s">
-                            <Link href="/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Home</Link>
+                            <Link href="/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer hover:text-[#23A6F0]">Home</Link>
                             <div className="flex">
-                                <Link href="/shop/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Shop</Link>
+                                <Link href="/shop/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer hover:text-[#23A6F0]">Shop</Link>
                                 <Image className="cursor-pointer" src={"/icons/arrow-down.svg"} 
                                     alt={"icon"} 
                                     width={"10"} 
                                     height={"10"}/>
                             </div>
-                            <Link href="/about/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">About</Link>
-                            <Link href="/team/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Blog</Link>
-                            <Link href="/contact/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Contact</Link>
-                            <Link href="/pages/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer">Pages</Link>
+                            <Link href="/about/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer hover:text-[#23A6F0]">About</Link>
+                            <Link href="/team/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer hover:text-[#23A6F0]">Blog</Link>
+                            <Link href="/contact/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer hover:text-[#23A6F0]">Contact</Link>
+                            <Link href="/pages/" className="text-#737373] font-bold text-[14px] p-[10px] cursor-pointer hover:text-[#23A6F0]">Pages</Link>
                         </div>
                         <div className="flex items-center gap-[20px]">
                            <div className="text-[#23A6F0] font-bold flex items-center gap-[5px]">
